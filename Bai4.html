@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let randomArray = [];
+    for (let i = 0; i < 10; i++) {
+        randomArray.push(Math.floor(Math.random() * 100))
+    }
+    document.write('Random Array : ' + randomArray + '<br>');
+
+    let reverseArray = randomArray.reverse();
+    document.write('Reverse Array : ' + reverseArray);
+
+</script>
+</body>
+</html>

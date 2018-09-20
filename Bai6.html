@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let randomArray = [];
+    for (let i = 0; i < 10; i++) {
+        randomArray.push(Math.floor(Math.random() * 20))
+    }
+    document.write('Array : ' + randomArray + '<br>');
+    let V = parseInt(prompt("Enter a number : "));
+    let count = 0;
+    for (let j = 0; j < randomArray.length - 1; j++) {
+        if (randomArray[j] === V) {
+            count++
+        }
+    }
+    if (count > 0) {
+        document.write(V + ' in the array' + '<br>')
+    } else document.write(V + ' not in the array' + '<br>');
+</script>
+</body>
+</html>

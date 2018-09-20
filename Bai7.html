@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let randomArray = [];
+    for (let i = 0; i < 23; i++) {
+        randomArray.push(Math.floor(Math.random() * 10))
+    }
+    document.write("Array : " + randomArray + '<br>');
+    let V = parseInt(prompt("Enter a number : "));
+    let count = 0;
+    for (let j = 0; j < randomArray.length - 1; j++) {
+        if (randomArray[j] === V) {
+            count++
+        }
+    }
+    let removeItem = [];
+    if (count > 0) {
+        for (let m = 0; m < randomArray.length - 1; m++) {
+            if (randomArray[m] === V) {
+                removeItem = randomArray.splice(m, 1);
+                randomArray.push(0)
+            }
+        }
+    }
+    newArray = randomArray;
+    document.write("New array whithout " + V + " : " + randomArray + '<br>');
+</script>
+</body>
+</html>

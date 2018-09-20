@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let randomArray = [];
+    let randomArray2 = [];
+
+    for (let i = 0; i < 10; i++) {
+        randomArray.push(Math.floor(Math.random() * 100));
+        randomArray2.push(Math.floor(Math.random() * 100));
+    }
+    document.write('Array 1 : ' + randomArray + '<br>');
+    document.write('Array 2 : ' + randomArray2 + '<br>');
+
+    let array = randomArray.concat(randomArray2);
+    document.write("Array = Array 1 + Array 2 : " + array);
+</script>
+</body>
+</html>
